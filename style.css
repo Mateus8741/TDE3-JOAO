@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    font-family: 'Itim', cursive;
+    color: #f04324;
+    
+}
+body{
+    
+    background-image: url(/img/fundo.jpg) ;
+}
+/*****************EFEITOS - NEON/RGB*******************/
+    @keyframes pisca{
+        from { color: #f04324;
+                    text-shadow: #f04324;
+        }
+                    12%{
+                        color: orangered;
+                        text-shadow: orangered; 
+                    }
+                    14%{
+                        color: #8080807e;
+                        text-shadow: none; 
+                    }
+                    20%{
+                        color: #f04324;
+                        text-shadow: 0 0 20px #f04324; 
+                    }
+                    22%{
+                        color: #8080807e;
+                        text-shadow: none; 
+                    }
+                   
+                    
+                    
+        to{color: #f04324;
+            text-shadow: 0 0 20px #f04324;
+
+        }
+    }
+    @keyframes piscarapido{
+        from { color: #8080807e;
+                    text-shadow: none;
+        }
+                    12%{
+                        color: #8080807e;
+                        text-shadow: none; 
+                    }
+                    20%{
+                        color: #8080807e;
+                        text-shadow: none; 
+                    }
+                    30%{
+                        color: #5024f0;
+                        text-shadow: 0 0 20px #5024f0; 
+                    }
+                    12%{
+                        color: #5024f0;
+                        text-shadow: #5024f0; 
+                    }
+                    30%{
+                        color: #5024f0;
+                        text-shadow: #5024f0; 
+                    }
+                    20%{
+                        color: #8080807e;
+                        text-shadow: none; 
+                    }
+                    62%{
+                        color: #5024f0;
+                        text-shadow: #5024f0; 
+                    }
+                    
+        to{color: #5024f0;
+            text-shadow: 0 0 20px #5024f0;
+
+        }
+    }
+    @keyframes rgb {
+        0%, 100%{
+            filter: hue-rotate(0deg);
+        }
+        50%{
+            filter: hue-rotate(360deg);
+        }
+    
+    }
+
+
+/*****************NEON - TEXTOS*******************/
+h1{
+    
+    font-size: 120px;
+    text-align: center;
+    
+    text-shadow: 0 0 20px;
+    animation: rgb 5s alternate infinite ease-in-out ;
+    
+}
+ h2{
+    text-align: center;
+    font-size: xxx-large;
+    color: #f04324;
+    text-shadow: 0 0 20px  #f04324;
+    animation: pisca 2s alternate infinite ease-in-out ;
+    
+}
+h3{
+    text-align: center;
+    font-size: xxx-large;
+    color: #f04324;
+    text-shadow: 0 0 20px  #f04324;
+    animation: pisca 2s alternate infinite ease-in-out ;
+    
+    
+}
+abbr{
+    text-decoration: none;
+    font-size: xxx-large;
+    color: #5024f0;
+    text-shadow: 0 0 20px  #5024f0;
+    animation: piscarapido 2.5s alternate infinite ease-in-out ;
+}
+p{
+    
+    font-size: larger;
+    color: #16f3bc;
+    text-shadow: 0 0 10px #16f3bc;
+}
+                    
+
+/*******************LINKS***********************/
+a{
+    text-shadow: none;
+    font-size: x-large;
+    text-decoration: none;
+    color: yellow;
+
+}
+a:hover{
+    font-weight: 900;
+    transition: all .25s ease-in-out;
+    text-shadow: 0 0 10px  yellow;
+    
+}
+
+/*******************ALINHAMENTO***********************/
+
+.select, .archives, .resources{
+    text-align: left;
+    padding-left: 50px;
+}
+
+ul{
+    border-color: yellow;
+    border-style: groove;
+    width: 500px;
+    padding-left: 0 ;
+    opacity: .5;
+    
+}
+ul:hover{
+    size: 500;
+    transition: all .25s ease-in-out;
+    box-shadow: 0 0 10px yellow;
+    opacity: 1;
+    
+}
+
+
+/***************************************SCROLLBAR***********************************************/
+::-webkit-scrollbar{
+    width: 12px;
+    background: #2c2c2c;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    
+}
+
