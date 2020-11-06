@@ -5,8 +5,10 @@
     
 }
 body{
+    background-color: rgb(0, 0, 0);
+    background-image: url(/img/fundo.jpg);
     
-    background-image: url(/img/fundo.jpg) ;
+    
 }
 /*****************EFEITOS - NEON/RGB*******************/
     @keyframes pisca{
@@ -86,6 +88,9 @@ body{
     }
 
 
+
+
+
 /*****************NEON - TEXTOS*******************/
 h1{
     
@@ -121,10 +126,16 @@ abbr{
     animation: piscarapido 2.5s alternate infinite ease-in-out ;
 }
 p{
-    
+    font-family: 'Lobster', cursive;
+    text-align: justify;
+    line-height: 30px;
+    margin: 30px;
     font-size: larger;
-    color: #16f3bc;
+    color: white;
     text-shadow: 0 0 10px #16f3bc;
+}
+footer{
+    margin: 33px;
 }
                     
 
@@ -134,7 +145,7 @@ a{
     font-size: x-large;
     text-decoration: none;
     color: yellow;
-
+    
 }
 a:hover{
     font-weight: 900;
@@ -148,21 +159,31 @@ a:hover{
 .select, .archives, .resources{
     text-align: left;
     padding-left: 50px;
+    
+    
+}
+li{
+    list-style: none;
+    
 }
 
 ul{
     border-color: yellow;
-    border-style: groove;
+    border-style: solid;
     width: 500px;
-    padding-left: 0 ;
     opacity: .5;
+    
+    
+    
     
 }
 ul:hover{
     size: 500;
     transition: all .25s ease-in-out;
+    border-color: yellow;
     box-shadow: 0 0 10px yellow;
     opacity: 1;
+    
     
 }
 
